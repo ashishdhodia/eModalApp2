@@ -1,0 +1,116 @@
+<!-- Side nav -->
+<mat-sidenav-container autosize fullscreen>
+  <mat-sidenav #sidenav mode="over">
+    <mat-nav-list>
+      <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+      <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+      <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <!-- Appbar -->
+    <div [ngClass]="{'dark': darkMode}">
+      <div class="flex-row-between h-12 text-[#757575] dark:bg-slate-950 dark:text-[white]">
+        <!-- Appbar left -->
+        <div class="flex-row-start gap-x-3">
+          <!-- Menu -->
+          <button class="flex-row-center h-12 w-12 bg-neutral-700" (click)="sidenav.toggle()">
+            <mat-icon class="text-white">menu</mat-icon>
+          </button>
+
+          <!-- Logo -->
+          <img src="../../assets/eModal-Logo.svg" alt="eModal Logo" />
+
+          <!-- Title -->
+          <p class="text-xl ">eModal Community Portal</p>
+        </div>
+
+        <!-- Appbar right -->
+        <!-- Appbar Icons -->
+        <div class="flex-row-end h-full ">
+          <mat-slide-toggle #darkModeSwitch (change)="changeTheme()"></mat-slide-toggle>
+          <div class=" flex-row-end [&>*]:app-header-icon [&>*]:dark:text-white">
+            <div matRipple>
+              <mat-icon>shopping_cart</mat-icon>
+            </div>
+            <div matRipple>
+              <mat-icon>notifications</mat-icon>
+            </div>
+            <div matRipple>
+              <mat-icon>settings</mat-icon>
+            </div>
+            <div matRipple>
+              <mat-icon>help</mat-icon>
+            </div>
+            <div matRipple>
+              <mat-icon>person</mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actionsbar -->
+      <div
+        class="flex-row-between h-14 pl-3 pr-3 py-2 border-y border-neutral-300 text-[#757575] dark:bg-slate-950 dark:text-[white]">
+        <!-- Actionsbar left -->
+        <div class="flex-row-center h-full">
+          <div class="flex-row-center gap-x-3">
+            <p class="text-base">Containers</p>
+
+            <!-- Actions menu -->
+            <div class="justify-between rounded">
+              <button mat-stroked-button [matMenuTriggerFor]="menuAction">
+                <div class="flex-row-center tracking-normal">
+                  Actions <mat-icon>arrow_drop_down</mat-icon>
+                </div>
+              </button>
+              <mat-menu #menuAction="matMenu">
+                <button mat-menu-item>Action 1</button>
+                <button mat-menu-item>Action 2</button>
+                <button mat-menu-item>Action 3</button>
+                <button mat-menu-item>Action 4</button>
+              </mat-menu>
+            </div>
+
+            <button mat-stroked-button class="tracking-normal" (click)="openDialog()">Add to my Containers</button>
+          </div>
+        </div>
+
+        <!-- Actionsbar right -->
+        <div class="flex-row-center">
+          <!-- Button Group -->
+          <div class="flex-row-start border border-neutral-300 rounded-md ">
+            <!-- Button -->
+            <button matRipple class="flex-row-center h-9 w-9 rounded-l">
+              <mat-icon>refresh</mat-icon>
+            </button>
+            <!-- Button -->
+            <button class="flex-row-center h-9 w-9 border-x border-neutral-300">
+              <mat-icon>filter_alt</mat-icon>
+            </button>
+            <!-- Button -->
+            <div class="flex-row-between rounded">
+              <button mat-button [matMenuTriggerFor]="menuSavedViews" class="p-2">
+                <div class="flex-row-center dark:text-white">
+                  <p class="pr-7 tracking-normal ">Saved Views</p>
+                  <mat-icon>arrow_drop_down</mat-icon>
+                </div>
+              </button>
+              <mat-menu #menuSavedViews="matMenu" class="w-40 mt-2">
+                <button mat-menu-item>View 1</button>
+                <button mat-menu-item>View 2</button>
+                <button mat-menu-item>View 3</button>
+                <button mat-menu-item>View 4</button>
+              </mat-menu>
+            </div>
+            <!-- Button -->
+            <button class="flex-row-center h-9 w-9 rounded-r border-l border-neutral-300">
+              <mat-icon>save</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+  <router-outlet></router-outlet>
