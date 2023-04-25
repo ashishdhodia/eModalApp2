@@ -1,0 +1,104 @@
+[
+  {
+    "containerId": "ABCU1029384",
+    "tradeType": "Import",
+    "containerShortCode": "40H",
+    "containerStatus": "Available",
+    "containerStatusColor": "Grey",
+    "containerCode": "T18-1203-00309",
+    "id": "1",
+    "origin": [
+      {
+        "statusAndETD": {
+          "status": "Ready For Pickup",
+          "ETD": "01/10/2023 10:30AM"
+        }
+      },
+      {
+        "holds": {
+          "customHold": "Yes",
+          "lineHold": "No",
+          "otherHolds": "No",
+          "LFD": "01/10/2023"
+        }
+      },
+      {
+        "fees": {
+          "feesPaid": "$2800",
+          "feesDue": "$160",
+          "goodThrough": "01/10/2023"
+        }
+      }
+    ],
+    "inTransit": [],
+    "destination": []
+  },
+  {
+    "containerId": "DEFU1029385",
+    "tradeType": "Import",
+    "containerShortCode": "40H",
+    "containerStatus": "Available",
+    "containerStatusColor": "White",
+    "containerCode": "T18-1203-00309",
+    "id": "2",
+    "origin": [
+      {
+        "statusAndETD": {
+          "status": "Ready For Pickup",
+          "ETD": "01/10/2023 10:30AM"
+        }
+      },
+      {
+        "holds": {
+          "customHold": "Yes",
+          "lineHold": "No",
+          "otherHolds": "No",
+          "LFD": "01/10/2023"
+        }
+      },
+      {
+        "fees": {
+          "feesPaid": "$2800",
+          "feesDue": "$160",
+          "goodThrough": "01/10/2023"
+        }
+      }
+    ],
+    "inTransit": [],
+    "destination": []
+  },
+  {
+    "containerId": "PQRU1029384",
+    "tradeType": "Import",
+    "containerShortCode": "40H",
+    "containerStatus": "NotAvailable",
+    "containerStatusColor": "Black",
+    "containerCode": "T18-1203-00309",
+    "id": "3",
+    "origin": [
+      {
+        "statusAndETD": {
+          "status": "Ready For Pickup",
+          "ETD": "01/10/2023 10:30AM"
+        }
+      },
+      {
+        "holds": {
+          "customHold": "Yes",
+          "lineHold": "No",
+          "otherHolds": "No",
+          "LFD": "01/10/2023"
+        }
+      },
+      {
+        "fees": {
+          "feesPaid": "$2800",
+          "feesDue": "$160",
+          "goodThrough": "01/10/2023"
+        }
+      }
+    ],
+    "inTransit": [],
+    "destination": []
+  }
+]

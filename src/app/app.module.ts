@@ -8,14 +8,18 @@ import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResponsiveAppComponent } from './responsive-app/responsive-app.component';
 import { WoResponsiveAppComponent } from './wo-responsive-app/wo-responsive-app.component';
-import { ModaldialogComponent } from './modaldialog/modaldialog.component'
+import { ModaldialogComponent } from './modaldialog/modaldialog.component';
+import { ContainerlistComponent } from './containerlist/containerlist.component';
+import { ContainerDetailsTopComponent } from './container-details-top/container-details-top.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ResponsiveAppComponent,
     WoResponsiveAppComponent,
-    ModaldialogComponent
+    ModaldialogComponent,
+    ContainerlistComponent,
+    ContainerDetailsTopComponent
   ],
   imports: [
     BrowserModule,
